@@ -1,0 +1,10 @@
+app = "tvoj-app-name"  # Zamijeni s imenom aplikacije na Fly.io
+primary_region = "fra"  # Npr. "fra" za Frankfurt, "ord" za Chicago
+
+[build]
+  builder = "heroku/buildpacks:20"
+
+[http_service]
+    internal_port = 8080  # Port na kojem bot sluša (npr. 8080 za Flask)
+    force_https = true
+    auto_stop_machines = false  # Sprječava gašenje nakon 1h
