@@ -3,3 +3,7 @@ requests
 tkinter
 nmap
 hashlib
+asyncio
+subprocess
+json
+re
